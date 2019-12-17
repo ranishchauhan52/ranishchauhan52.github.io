@@ -1,0 +1,112 @@
+/* CSS File for Home | Ranish Chauhan | Portfolio (Tablet) */
+
+/* Font Awesome Icons */
+.fas {
+  font-size: 1.5rem;
+}
+
+/* Navigation Bar */
+#myNavbar {
+  padding: 0 1rem 0 0;
+}
+
+.navList {
+  position: absolute;
+  top: 3.5rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background: #fe0;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 1;
+  height: 0;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
+.navListOpen {
+  height: 190px;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
+.navListOpenSub {
+  height: 330px;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
+.navItems {
+  margin: 1.25rem 0;
+}
+
+.navItems a {
+  color: #111;
+}
+
+.subMenu {
+  display: block;
+  position: relative;
+  top: 1rem;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+  margin-bottom: 0rem;
+}
+
+.subMenuOpen {
+  height: 120px;
+  margin-bottom: 1.5rem;
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
+.subMenu li a {
+  margin-left: 1rem;
+}
+
+#projects {
+  margin-bottom: 0;
+}
+
+#projects button {
+  margin-left: 0;
+}
+
+#projects:hover .subMenu {
+  display: block;
+}
+
+/* Header */
+#headerName {
+  font-size: 2.5rem;
+}
+
+#headerList {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* Responsive Items */
+.showTablet {
+  display: block;
+}
+
+.hideTablet {
+  display: none;
+}

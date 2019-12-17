@@ -1,0 +1,495 @@
+/* CSS File for Home | Ranish Chauhan | Portfolio (Laptop) */
+
+/* All Elements */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  overflow-x: hidden;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: 'Lato', sans-serif;
+}
+
+/* Elements */
+p {
+  color: #111;
+}
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+/* Utilites */
+.center {
+  text-align: center;
+}
+
+/* Responsive Design */
+.showTablet {
+  display: none;
+}
+
+/* scrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #fe0;
+}
+
+/* Navigation Bar */
+
+#myNavbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 3.5rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: #fe0;
+  text-transform: uppercase;
+}
+
+.navList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navItems,
+#projects button {
+  margin: 0 0.5rem;
+}
+
+#myNavbar a,
+.navItems a,
+#projects button {
+  padding: 0.7rem;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#myNavbar a:hover,
+.navItems a:hover,
+#projects button:hover {
+  color: #fe0;
+  background-color: #111;
+}
+
+.subMenu {
+  display: none;
+  list-style: none;
+  background-color: #fe0;
+  color: #111;
+  position: absolute;
+  top: 3.5rem;
+  width: 13rem;
+}
+
+.subMenu li {
+  margin-bottom: 1.5rem;
+}
+
+.subMenu li a {
+  margin-left: 0.5rem;
+  border-radius: 0px;
+}
+
+#projects button {
+  background-color: #fe0;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#projects:hover .subMenu {
+  display: block;
+}
+
+/* Header */
+#myHeader {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../images/headerImage.jpg');
+  color: #fff;
+  height: calc(100vh - 7rem);
+}
+
+#bird {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  -webkit-transition: all 7s linear;
+  transition: all 7s linear;
+  cursor: pointer;
+}
+
+#bird p {
+  color: #fe0;
+}
+
+#headerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fe0;
+  width: 100vw;
+}
+
+#headerName {
+  font-size: 3rem;
+  font-style: italic;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 0.5rem;
+}
+
+#headerName:hover {
+  letter-spacing: 0.7rem;
+  font-size: 3.5rem;
+}
+
+#headerList {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#headerList h3 {
+  font-size: 1.25rem;
+  font-style: italic;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+#headerList h3:hover {
+  opacity: 1;
+}
+
+#headerButton {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background-color: #fe0;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#headerButton:hover {
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+@keyframes hvr-buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+/* Footer */
+#myFooter {
+  height: 3.5rem;
+  background: #fe0;
+  padding: 0.5rem 2rem;
+}
+
+#myFooter a {
+  font-style: italic;
+  text-decoration: underline;
+  -webkit-transition: font-style 0.3s ease;
+  transition: font-style 0.3s ease;
+}
+
+#myFooter a:hover {
+  font-style: normal;
+}
+
+/* About Container */
+#darkThemeButton {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #fe0;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+#darkThemeButton:hover {
+  background-color: #fd0;
+}
+
+#aboutContent {
+  max-width: 700px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+#aboutContent > div {
+  margin-bottom: 4rem;
+}
+
+#about h2 {
+  color: #111;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #fe0;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  padding: 0 0.5rem;
+  color: inherit;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: #fe0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+.button:hover {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.skillsList {
+  margin-bottom: 2rem;
+}
+
+.skillsList ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.skillsList ul li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  margin: 0 1rem;
+}
+
+.skillsList ul li div i {
+  color: #111;
+  padding: 1rem;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #fe0;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.skillsList ul li div p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js-square {
+  padding: 0.5rem !important;
+  font-size: 3rem !important;
+}
+
+/* Fixed footer at bottom if screen is very large in height */
+@media screen and (min-height: 1150px) {
+  #about {
+    height: calc(100vh - 7rem);
+  }
+}

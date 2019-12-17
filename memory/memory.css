@@ -1,0 +1,311 @@
+/* CSS for Memory Game */
+
+/* All Elements */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  overflow-x: hidden;
+}
+
+/* Utlities */
+.center {
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 1.5rem 0;
+  background-color: coral;
+  margin-bottom: 4rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Game */
+#game {
+  margin: 0 auto;
+  max-width: 768px;
+}
+
+/* Game Intro */
+
+#gameIntro {
+  margin: 2rem 0;
+}
+
+#gameIntro h2 {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  background-color: coral;
+  margin-bottom: 1rem;
+}
+
+/* Game Stats */
+#gameStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#startGameButton,
+#totalMoves,
+#highScore {
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin: 0 1rem;
+  display: inline;
+  background-color: coral;
+  padding: 1rem 2rem;
+}
+
+#startGameButton {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  outline: none;
+  border: 2px solid #111;
+}
+
+#startGameButton:hover {
+  background-color: #ff6c37;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Game Area*/
+#gameArea {
+  margin: 3rem 4rem;
+  margin-bottom: 5rem;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.card {
+  width: 100px;
+  height: 150px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  cursor: pointer;
+  -webkit-animation: show 1s linear;
+  animation: show 1s linear;
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  border-radius: 1rem;
+}
+
+.front {
+  background-color: coral;
+}
+
+.back {
+  color: coral;
+  background-color: #111;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  border-radius: 0.5rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#gameArea i {
+  font-size: 3rem;
+}
+
+#finalResult {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background-color: coral;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  border: 3px solid #111;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: coral;
+  padding: 0.5rem;
+  width: 100vw;
+}
+
+footer a {
+  color: #111;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  /* Header */
+  header h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Header */
+  header {
+    padding: 1.5rem 1.5rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header h3 {
+    font-size: 1rem;
+  }
+
+  /* Game */
+  #game {
+    padding: 0 1.5rem;
+  }
+
+  /* Game Intro */
+  #gameIntro h2 {
+    font-size: 1.25rem;
+  }
+
+  /* Game Stats */
+  #gameStats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  #startGameButton,
+  #totalMoves,
+  #highScore {
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* Game Area*/
+  #gameArea {
+    margin: 2rem 1rem;
+    margin-bottom: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .card {
+    width: 80px;
+    height: 120px;
+  }
+
+  #gameArea i {
+    font-size: 2rem;
+  }
+
+  #finalResult {
+    margin-top: -6rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: 3px solid #111;
+    margin-bottom: 5rem;
+  }
+}
+
+/* scrollBar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: coral;
+}

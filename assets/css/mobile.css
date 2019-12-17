@@ -1,0 +1,29 @@
+/* CSS File for Home | Ranish Chauhan | Portfolio (Laptop) */
+
+/* Header */
+#myHeader {
+  height: calc(100vh - 8.5rem);
+}
+
+#bird {
+  display: none;
+}
+
+#headerList h3 {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* Footer */
+#myFooter {
+  height: 5rem;
+}
+
+/* About */
+#about h2 {
+  font-size: 1rem;
+}
+
+.skillsList ul {
+  grid-template-columns: repeat(2, 1fr);
+}

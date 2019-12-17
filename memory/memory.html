@@ -1,0 +1,78 @@
+<!-- HTML for Memory Game -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Important Head Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Memory Game | Ranish Chauhan</title>
+    <meta name="author" content="Ranish Chauhan" />
+
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, nofollow" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="memory.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="center">
+      <h1>
+        <i class="fas fa-brain"></i> A Game to Test your Brain
+        <i class="fas fa-brain"></i>
+      </h1>
+      <h3>Traditional game of testing human memory.</h3>
+    </header>
+
+    <!-- Game -->
+    <div id="game">
+      <!-- Introduction to game -->
+      <div id="gameIntro" class="center">
+        <h2>MEMORY GAME WITH 12 CARDS</h2>
+        <p>
+          Rule:-There are 12 cards with 6 unique pictures(6 x 2 = 12). <br />
+          After selecting one card, you have to select the next immediate card
+          with the same picture.
+        </p>
+      </div>
+      <!-- Game Stats -->
+      <div id="gameStats">
+        <button id="startGameButton">Start Game</button>
+        <p id="totalMoves">Tota Moves:- <span id="movesCount">00</span></p>
+        <p id="highScore">
+          HIGH SCORE: <b><span id="highScoreCount"></span></b>
+        </p>
+      </div>
+      <!-- Game Area -->
+      <div id="gameArea"></div>
+      <div id="finalResult">Test</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="center">
+      <p>
+        &copy;
+        <a href="https://www.linkedin.com/in/ranishchauhan52" target="_blank"
+          >Ranish Chauhan</a
+        >.
+      </p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="memory.js"></script>
+  </body>
+</html>

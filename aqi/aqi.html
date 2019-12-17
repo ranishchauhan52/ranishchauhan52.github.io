@@ -1,0 +1,67 @@
+<!-- HTML for AQI Finder -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Important Head Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AQI Finder | Ranish Chauhan</title>
+    <meta name="author" content="Ranish Chauhan" />
+
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, nofollow" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="aqi.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="center">
+      <h1>Check How Bad is Air Around You? <i class="fas fa-smog"></i></h1>
+      <h2>
+        <i class="fas fa-search"></i>! Check Now !<i class="fas fa-search"></i>
+      </h2>
+    </header>
+    <!-- Container -->
+    <div id="container">
+      <div id="search" class="center">
+        <p>Enter Your Country or City:-</p>
+        <input type="text" id="cityInput" list="cities" />
+        <datalist id="cities">
+          <option value="Delhi"> </option>
+          <option value="Sydney"> </option>
+          <option value="Boston"> </option>
+        </datalist>
+
+        <button type="submit" id="submitButton">SUBMIT</button>
+      </div>
+      <div id="output"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="center">
+      <p>
+        &copy;
+        <a href="https://www.linkedin.com/in/ranishchauhan52">Ranish Chauhan</a
+        >.
+      </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="aqi.js"></script>
+  </body>
+</html>
